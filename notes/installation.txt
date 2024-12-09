@@ -1,0 +1,2 @@
+npx create-react-app myapp
+ --for creation of react project. unlike npx does not download the create-react-app package it just uses it

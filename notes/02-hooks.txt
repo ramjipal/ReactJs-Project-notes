@@ -1,0 +1,20 @@
+hooks: In React, Hooks are special functions that let you use state and other React features in functional components. Before Hooks were introduced (in React 16.8), only class components could handle state and lifecycle methods. 
+
+
+
+-useState accepts an initial state and returns two values:
+--The current state.
+--A function that updates the state.
+
+eg. const [current, setCurrent] = useState(0)
+
+setCurrent(current + 1) ---> increament the current everywhere
+setCurrent((previous_state) =>{
+    return previous_state + 1   ---> we can change only particular property of an object
+
+    also for object:
+    return {...previous_state, color: "blue"} --> only changes the color of object
+})
+
+
+---------------------------

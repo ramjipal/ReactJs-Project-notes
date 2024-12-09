@@ -1,0 +1,24 @@
+useCallback:
+-useCallback is a React Hook used to memoize a function so that it doesn't get recreated every time a component re-renders. This is especially useful when passing functions as props to child components to prevent unnecessary re-renders, it renders again if dependencies changes
+
+----------------------------------------------------
+
+useEffect:
+-The code inside the effect runs after rendering, not during it.
+-The effect only runs when necessary, based on the dependency array you provide. If the dependencies haven't changed, the effect won't run again.
+------------------------------------------------
+how useCallback and useEffect works together:
+useEffect:
+
+Runs a block of code (side effects) after the component renders.
+Tracks dependencies (variables it relies on) and re-runs only when they change.
+useCallback:
+
+Prevents a function from being re-created on every render.
+Returns the same function instance as long as its dependencies don’t change.
+--------------------------------------
+
+re-render: whenever any state is changed like password, count browser render the html or javascript again
+which means if we are calling a function which is changing any state variable say count then re-rendering happend which in turn again call the same function and this is done infinitly
+
+
